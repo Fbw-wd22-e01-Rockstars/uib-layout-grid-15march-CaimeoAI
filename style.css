@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-size: 2rem;
+}
+
+/*? General Grid Settings */
+main
+{
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+div
+{
+    text-align: center;
+    border: 3px solid blue;
+    min-height: 200px;
+}
+
+div:nth-child(2)
+{
+    background-color: #6B00FF;
+    grid-column: span 2;
+}
+
+div:nth-child(6)
+{
+    background-color: green;
+    grid-column: span 2;
+}
+
+div:nth-child(9)
+{
+    background-color: #FCB000;
+    grid-column: 2 ;
+    grid-row: 3 / span 2;
+}
+
+div:nth-child(10)
+{
+    background-color: #8A0081;
+    grid-row: span 2;
+}
+/*? General Grid Settings END */
